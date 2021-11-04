@@ -16,7 +16,7 @@ resource "aws_elb" "my-elb" {
     interval            = 30
   }
 
-  number_of_instances = 2
+  #number_of_instances = 2
   instances = [aws_instance.example.id,aws_instance.example-2.id]
 
   cross_zone_load_balancing   = true
