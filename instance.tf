@@ -4,7 +4,7 @@ resource "aws_instance" "example" {
 
 
     # The VPC subnet
-    subnt_id = aws_subnet.main-public-1.subnt_id
+    subnet_id = aws_subnet.main-public-1.subnet_id
 
     # The security group
     vpc_security_group_ids = [aws_security_group.allow-ssh.id]
@@ -38,7 +38,7 @@ resource "aws_instance" "example-2" {
 
 
     # The VPC subnet
-    subnt_id = aws_subnet.main-public-2.subnt_id
+    subnet_id = aws_subnet.main-public-2.subnet_id
 
     # The security group
     vpc_security_group_ids = [aws_security_group.allow-ssh.id]
